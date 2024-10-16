@@ -1,0 +1,11 @@
+<div class="dashboard-container">
+  <h2 class="text-center">Mon Compte</h2>
+  <div class="info-cards-container">
+    <div *ngFor="let info of accountInfoList" class="info-card" [ngClass]="info.infoStyle">
+      <div class="info-content">
+        <h3>{{ info.title }}</h3>
+        <p class="amount">{{ info.amount | number }}</p>
+      </div>
+    </div>
+  </div>
+</div>

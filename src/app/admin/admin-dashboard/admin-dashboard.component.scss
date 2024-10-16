@@ -1,0 +1,39 @@
+.container {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.circle-button {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e1e78, #4b4bdf, #e7e7ff); /* Dégradé d'un bleu profond à un bleu clair */
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.circle-button:hover {
+  background: linear-gradient(135deg, #003366, #4b4bdf, #e7e7ff);
+  transform: scale(1.1);
+}
+
+.button-icon {
+  font-size: 3rem;
+}
+
+.button-text {
+  margin-top: 5px;
+}

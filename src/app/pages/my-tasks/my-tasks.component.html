@@ -1,0 +1,24 @@
+<div class="p-3">
+  <h2>My Tasks List</h2>
+
+  <div>
+
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">DateDebut</th>
+        <th scope="col">DateFin</th>
+        <th scope="col">Task</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let ts of tasks">
+        <th scope="row">{{ ts.dateDebut }}</th>
+        <td>{{ts.dateFin}}</td>
+        <td>{{ts.tache}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
